@@ -3,6 +3,7 @@ import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import Profile from './components/Profile'
+import user from './user.json'
 
 // function App() {
 //   return (
@@ -25,37 +26,34 @@ import Profile from './components/Profile'
 //   );
 // }
 
+
 const App=()=>{
   return(
-<div class="profile">
-  <div class="description">
-    <img
-      src="https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"
-      alt="Аватар пользователя"
-      class="avatar"
-    />
-    <p class="name">Petra Marica</p>
-    <p class="tag">@pmarica</p>
-    <p class="location">Salvador, Brasil</p>
-  </div>
+   
+    <Profile
+    //  name="Jacques Gluke"
+    //  tag= "jgluke"
+    //  location= "Ocho Rios, Jamaica"
+    //  avatar= "https://www.flaticon.com/svg/static/icons/svg/3784/3784184.svg"
+    //  //stats= {
+    //    followers= "5603"
+    //    views= "4827"
+    //    likes= "1308"
+   avatar={user[0].avatar}
+   name={user[0].name}
+   tag={user[0].tag}
+   location={user[0].location}
+   followers={user[0].stats.followers}
+   views={user[0].stats.views}
+   likes={user[0].stats.likes}
 
-  <ul class="stats">
-    <li>
-      <span class="label">Followers</span>
-      <span class="quantity">1000</span>
-    </li>
-    <li>
-      <span class="label">Views</span>
-      <span class="quantity">2000</span>
-    </li>
-    <li>
-      <span class="label">Likes</span>
-      <span class="quantity">3000</span>
-    </li>
-  </ul>
-</div>
-  );
-  //<Profile />
-};
+
+
+
+   />
+  
+   );
+   };
+
 
 export default App;
