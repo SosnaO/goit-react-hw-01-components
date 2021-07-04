@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 //import defoltImage from './defaultImg.jpg'
 
 const Statistics=({ label, percentage})=>(
-    <section class="statistics">
-    <h2 class="title">Upload stats</h2>
+    <section className="statistics">
+    <h2 className="title">Upload stats</h2>
   
-    <ul class="stat-list">
-      <li class="item">
-        <span class="label">{label}</span>
-        <span class="percentage">{percentage}</span>
+    <ul className="stat-list">
+      <li className="item">
+        <span className="label">{label}</span>
+        <span className="percentage">{percentage}</span>
       </li>
       {/* <li class="item">
         <span class="label">{label}</span>
