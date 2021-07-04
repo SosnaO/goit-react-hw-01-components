@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import defoltImage from './defaultImg.jpg'
-console.log(defoltImage)
+
 const Profile=({ avatar, name, tag, location,followers,views,likes})=>(
    
 <div className="profile">

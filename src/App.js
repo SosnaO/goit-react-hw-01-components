@@ -4,7 +4,8 @@ import React from 'react';
 import './App.css';
 import Profile from './components/Profile'
 import user from './user.json'
-
+import Statistics from './components/Statistics'
+import statisticalData from './statistical-data.json'
 // function App() {
 //   return (
 //     <div className="App">
@@ -29,31 +30,58 @@ import user from './user.json'
 
 const App=()=>{
   return(
-   
+   <div>
+
+{user.map((us)=>(
     <Profile
-    //  name="Jacques Gluke"
-    //  tag= "jgluke"
-    //  location= "Ocho Rios, Jamaica"
-    //  avatar= "https://www.flaticon.com/svg/static/icons/svg/3784/3784184.svg"
-    //  //stats= {
-    //    followers= "5603"
-    //    views= "4827"
-    //    likes= "1308"
-   avatar={user[0].avatar}
-   name={user[0].name}
-   tag={user[0].tag}
-   location={user[0].location}
-   followers={user[0].stats.followers}
-   views={user[0].stats.views}
-   likes={user[0].stats.likes}
-
-
-
-
+   avatar={us.avatar}
+   name={us.name}
+   tag={us.tag}
+   location={us.location}
+   followers={us.stats.followers}
+   views={us.stats.views}
+   likes={us.stats.likes}
    />
-  
-   );
-   };
+))}
 
+
+   {statisticalData.map((statisticData)=>( 
+
+   <Statistics 
+     //  stats={statisticalData}
+   //id={statisticData.id}
+   //stats={statisticalData}
+   label={statisticData.label}
+   percentage={statisticData.percentage}
+   //title="Upload stats" stats={statisticalData}
+      
+   />
+   
+   ))}
+{/* 
+<Statistics title="Upload stats" stats={statisticalData} />;
+<Statistics stats={statisticalData} />; */}
+   </div>
+   
+   );
+
+
+   
+  //  {statisticalData.map((statistic)=>(
+    // <li key= statisticalData.id}>
+    //  <Statistic
+    // label={statisticalData.label}
+    // percentage={statisticalData.percentage}
+    //    />
+    //</li>
+      //  ))}
+
+//       <Statistics title="Upload stats" stats={statisticalData} />;
+// <Statistics stats={statisticalData} />;
+    
+   // );
+    
+
+};
 
 export default App;
