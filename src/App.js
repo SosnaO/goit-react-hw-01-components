@@ -1,18 +1,32 @@
+/*eslint no-global-assign: "error"*/
+
+// eslint-disable-next-line no-unused-vars
 import React, { Profiler } from 'react';
 
 import './App.css';
 
 import user from './user.json'
-import ProfileList from './components/ProfileList';
+import Profile from './components/Profile'
 
 import statisticalData from './statistical-data.json'
-import StatisticsList from './components/StatisticsList'
+import Statistics from './components/Statistics'
 
 const App=()=>{
   return(
    <div>
-   <ProfileList user={user} />
-  <StatisticsList statisticalData ={statisticalData} /> 
+   
+   <Profile
+    avatar={user[0].avatar}
+    name={user[0].name}
+    tag={user[0].tag}
+    location={user[0].location}
+    followers={user[0].stats.followers}
+    views={user[0].stats.views}
+    likes={user[0].stats.likes}
+    />
+    
+   <Statistics title="Upload stats" stats={statisticalData} />;
+   <Statistics stats={statisticalData} />;
    </div>
       );
 };

@@ -2,40 +2,35 @@ import React from 'react';
 import PropTypes from 'prop-types';
 //import defoltImage from './defaultImg.jpg'
 
-const Statistics=({ label, percentage})=>(
-    <section className="statistics">
-    <h2 className="title">Upload stats</h2>
-  
-    <ul className="stat-list">
-      <li className="item">
-        <span className="label">{label}</span>
-        <span className="percentage">{percentage}</span>
-      </li>
-      {/* <li class="item">
-        <span class="label">{label}</span>
-        <span class="percentage">{percentage}</span>
-      </li>
-      <li class="item">
-        <span class="label">{label}</span>
-        <span class="percentage">{percentage}</span>
-      </li>
-      <li class="item">
-        <span class="label">{label}</span>
-        <span class="percentage">{percentage}</span>
-      </li> */}
-    </ul>
-  </section>
-    );
+const Statistics=({ title, stats})=>{
+  return (
 
-Statistics.defaultProps = {
-        title:"",
- }
-Statistics.prototype = {
-    title: PropTypes.string,
-   
-    label:PropTypes.string.isRequired,
-    percentage:PropTypes.number.isRequired,
-  
-}
+  <section className="statistics">
+ 
 
+  {title && <h2 className="title">{title}</h2>}
+
+  <ul className="stat-list">
+    {stats.map(stat=>(
+    <li key={stat.id} className="item">
+      <span className="label">{stat.label}</span>
+      <span className="percentage">{stat.percentage}%</span>
+    </li>
+    ))}
+      
+  </ul>
+</section>
+);
+};
+
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number,
+    }),
+  ).isRequired,
+};
 export default Statistics;
