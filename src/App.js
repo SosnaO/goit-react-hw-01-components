@@ -33,8 +33,6 @@ const App=()=>{
 
    <FriendList friends={friends} />
 
-
-
    </div>
       );
 };
