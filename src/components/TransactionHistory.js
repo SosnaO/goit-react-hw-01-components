@@ -38,10 +38,10 @@ const TransactionHistory=({ items})=>{
 
 
 TransactionHistory.propTypes = {
-    avatar: PropTypes.string,
-    name: PropTypes.string,
-    isOnline: PropTypes.bool,
-    id: PropTypes.number,
+  
+    type: PropTypes.string,
+    amount: PropTypes.number,
+    currency: PropTypes.string,
   };
 
 
