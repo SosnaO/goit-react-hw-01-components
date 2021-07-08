@@ -6,16 +6,16 @@ import React, { Profiler } from 'react';
 import './App.css';
 
 import user from './user.json'
-import Profile from './components/Profile'
+import Profile from './components/Profile/Profile.module'
 
 import statisticalData from './statistical-data.json'
-import Statistics from './components/Statistics'
+import Statistics from './components/Statistics/Statistics'
 
 import friends from './friends.json'
-import FriendList from './components/FriendList'
+import FriendList from './components/FriendList/FriendList'
 
 import transactions from './transactions.json'
-import TransactionHistory from './components/TransactionHistory'
+import TransactionHistory from './components/TransactionHistory/TransactionHistory'
 
 const App=()=>{
   return(

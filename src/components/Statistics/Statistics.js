@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+//import  styles from './Statistics.module.css'
 //import defoltImage from './defaultImg.jpg'
 
 const Statistics=({ title, stats})=>{

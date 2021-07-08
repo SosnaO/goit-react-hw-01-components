@@ -1,0 +1,50 @@
+.profile {
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.avatar {
+  width: 85px;
+  border-radius: 50%;
+}
+
+.stats {
+  list-style: none;
+  display: flex;
+  
+  background:white;
+}
+
+.name {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.description {
+  text-align: center;
+  padding: 10px;
+}
+
+.tag {
+  color: gray;
+}
+
+.location {
+  color:black;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+}
+
+.label {
+  color: gray;
+  padding-bottom: 5px;
+}
+
+.quantity {
+  font-weight: 600;
+}
