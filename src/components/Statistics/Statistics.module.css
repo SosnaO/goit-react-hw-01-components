@@ -1,0 +1,33 @@
+.statistics{
+    background-color: aliceblue;
+    width: 500px;
+    margin: 0 auto;
+    outline: 1px solid;
+}
+.title{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: font-weight;
+    background-color: white;
+    height: 80px;
+    padding-top: 20px;
+}
+.stat_list{
+    display: flex;
+  margin-bottom: 10px;
+}
+
+
+.item {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
+  
+  .label {
+    font-size: font-size;
+    margin-bottom: 10px;
+  }
+  

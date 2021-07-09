@@ -1,16 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import defoltImage from '../defaultImg.jpg';
-//import  styles from './FriendList.module.css';
+import  styles from './FriendList.module.css';
+
+
 
 const FriendList=({ friends})=>{
+
+
   return (
-<ul className="friend-list">
+<ul className={styles.friend_list}>
 {friends.map(friend=>
-<li  key={friend.id} class="item">
-  <span className="status">{friend.isOnline}</span>
-  <img className="avatar" src={friend.avatar} alt={friend.name} width="48" />
-  <p className="name">{friend.name}</p>
+<li  key={friend.id} class={styles.item}>
+
+ <span className={`${styles.ofline} ${friend.isOnline && styles.online}`}></span>
+
+  {/* <span className="status">{friend.isOnline}</span> */}
+  <img className={styles.avatar} src={friend.avatar} alt={friend.name} width="48" />
+  <p className={styles.name}>{friend.name}</p>
+
+
 </li>
 )}
 </ul>
