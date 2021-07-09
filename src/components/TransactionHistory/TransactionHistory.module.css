@@ -1,0 +1,28 @@
+.transaction_history {
+    
+    margin-left: auto;
+    margin-right: auto;
+    border: ridge;
+  }
+  
+  .header {
+    background-color:aquamarine;
+    text-transform: uppercase;
+  }
+  
+  .header th {
+    padding: 15px 80px;
+  }
+  
+  .tbody {
+    
+    text-transform:capitalize;
+    text-align: center;
+
+  }
+  .tr {
+    height: 50px;
+  }
+  .tbody:nth-child(2n) {
+    background-color: gainsboro;
+  }

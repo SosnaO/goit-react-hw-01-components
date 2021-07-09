@@ -1,5 +1,5 @@
 .statistics{
-    background-color: aliceblue;
+   
     width: 500px;
     margin: 0 auto;
     outline: 1px solid;
@@ -14,7 +14,8 @@
 }
 .stat_list{
     display: flex;
-  margin-bottom: 10px;
+  
+  padding: inherit;
 }
 
 
