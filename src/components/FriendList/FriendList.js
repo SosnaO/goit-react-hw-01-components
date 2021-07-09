@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import defoltImage from '../defaultImg.jpg';
-import  styles from './FriendList.module.css';
+import styles from './FriendList.module.css';
 
 
 
@@ -11,7 +11,7 @@ const FriendList=({ friends})=>{
   return (
 <ul className={styles.friend_list}>
 {friends.map(friend=>
-<li  key={friend.id} class={styles.item}>
+<li  key={friend.id} className={styles.item}>
 
  <span className={`${styles.ofline} ${friend.isOnline && styles.online}`}></span>
 
