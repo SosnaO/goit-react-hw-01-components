@@ -1,24 +1,18 @@
 .transaction_history {
-    
     margin-left: auto;
     margin-right: auto;
     border: ridge;
   }
-  
-  .header {
+    .header {
     background-color:aquamarine;
     text-transform: uppercase;
   }
-  
-  .header th {
+    .header th {
     padding: 15px 80px;
   }
-  
-  .tbody {
-    
+    .tbody {
     text-transform:capitalize;
     text-align: center;
-
   }
   .tr {
     height: 50px;

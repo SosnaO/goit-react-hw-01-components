@@ -10,44 +10,35 @@
   width: 85px;
   border-radius: 50%;
 }
-
 .stats {
    display: flex;
    background-color:  aliceblue;;
- 
-}
-
+ }
 .name {
   font-weight: 500;
   margin-bottom: 10px;
 }
-
 .description {
   text-align: center;
   padding: 20px;
   background-color: white;
 }
-
 .tag {
   color: gray;
 }
-
 .location {
   color:black;
 }
-
 .item {
   display: flex;
   flex-direction: column;
   padding: 10px;
   text-align: center;
 }
-
 .label {
   color: gray;
   padding-bottom: 5px;
 }
-
 .quantity {
   font-weight: 600;
 }

@@ -3,23 +3,14 @@ import PropTypes from 'prop-types';
 import defoltImage from '../defaultImg.jpg';
 import styles from './FriendList.module.css';
 
-
-
 const FriendList=({ friends})=>{
-
-
   return (
 <ul className={styles.friend_list}>
 {friends.map(friend=>
 <li  key={friend.id} className={styles.item}>
-
  <span className={`${styles.ofline} ${friend.isOnline && styles.online}`}></span>
-
-  
   <img className={styles.avatar} src={friend.avatar} alt={friend.name} width="48" />
   <p className={styles.name}>{friend.name}</p>
-
-
 </li>
 )}
 </ul>
@@ -27,8 +18,7 @@ const FriendList=({ friends})=>{
  FriendList.defaultProps = {
     avatar: defoltImage,
   };
-  
-  FriendList.propTypes = {
+    FriendList.propTypes = {
     avatar: PropTypes.string,
     name: PropTypes.string,
     isOnline: PropTypes.bool,

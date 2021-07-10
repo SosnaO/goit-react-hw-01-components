@@ -1,6 +1,5 @@
 .statistics{
-   
-    width: 500px;
+       width: 500px;
     margin: 0 auto;
     outline: 1px solid;
 }
@@ -14,11 +13,8 @@
 }
 .stat_list{
     display: flex;
-  
-  padding: inherit;
+    padding: inherit;
 }
-
-
 .item {
     width: 100px;
     display: flex;
@@ -26,8 +22,7 @@
     align-items: center;
     padding: 5px;
   }
-  
-  .label {
+.label {
     font-size: font-size;
     margin-bottom: 10px;
   }

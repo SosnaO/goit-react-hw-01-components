@@ -1,11 +1,9 @@
 .friend_list{
-
 width: 500px;
 margin: auto;
 margin-bottom: 50px;
 margin-top: 50px;
 }
-
 .item {
     display: flex;
     align-items: center;
@@ -13,8 +11,7 @@ margin-top: 50px;
     background-color: white;
     border: ridge;
   }
-  
-  .avatar {
+    .avatar {
     margin-right: 10px;
     margin-left: 10px;
     width: 100px;
@@ -22,9 +19,6 @@ margin-top: 50px;
   .name{
     font-weight: 500;
     font-size: xxx-large;
-
-
-
   }
   .ofline{
     width: 30px; 
@@ -33,8 +27,7 @@ margin-top: 50px;
     border-radius: 50%;
     margin-left: 15px;
   }
-  
-  .online {
+    .online {
     width: 30px; 
     height: 30px; 
     background-color: green;

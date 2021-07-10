@@ -12,9 +12,6 @@ const TransactionHistory=({ items})=>{
       <th>Currency</th>
     </tr>
   </thead>
-
-   
-
   <tbody className={styles.tbody}>
      {items.map(item=>(
     <tr className={styles.tr} key={item.id}>
@@ -24,10 +21,6 @@ const TransactionHistory=({ items})=>{
     </tr>
 ))}
   </tbody>
-
-
-    
-
 </table>
     );
 };
