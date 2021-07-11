@@ -17,13 +17,13 @@ const App=()=>{
    <div>
    
    <Profile
-    avatar={user[0].avatar}
-    name={user[0].name}
-    tag={user[0].tag}
-    location={user[0].location}
-    followers={user[0].stats.followers}
-    views={user[0].stats.views}
-    likes={user[0].stats.likes}
+    avatar={user.avatar}
+    name={user.name}
+    tag={user.tag}
+    location={user.location}
+    followers={user.stats.followers}
+    views={user.stats.views}
+    likes={user.stats.likes}
     />
     <Statistics title="Upload stats" stats={statisticalData} />
    <Statistics stats={statisticalData} />
